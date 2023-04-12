@@ -1,0 +1,205 @@
+.desc-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    /* background-color: #2c3e50; */
+    background-color: #003145;
+    color: white;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.desc-container h2 {
+    font-size: 3rem;
+}
+
+.desc-card1 {
+    display: flex;
+    flex-direction: column;
+    padding-right: 1rem;
+    box-sizing: border-box;
+    margin: 4rem 0;
+    margin-left: 10rem;
+}
+
+.img-title {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+}
+
+.img-title img {
+    object-fit: cover;
+    display: block;
+    width: 9rem;
+    height: 8rem;
+    border-radius: 7px;
+}
+
+.desc-para {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+
+}
+
+.star-date {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 2rem;
+    margin-top: auto;
+    font-size: 1.5rem;
+
+}
+
+.desc-card2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding-left: 1rem;
+    box-sizing: border-box;
+    margin-right: 5rem;
+}
+
+.desc-card2 p {
+    margin: 0;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+
+.date {
+    /* background-color: #366364c7; */
+    background-color: #255973;
+    border-radius: 14px;
+    padding: 4px 8px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+
+.date::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -11px;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 25px;
+    background-color: white;
+}
+
+.date span {
+    margin-left: 0.5rem;
+}
+
+.desc2-container {
+    display: flex;
+    gap: 3rem;
+    /* color: #4a4343; */
+    /* color: #222222; */
+    color: #858585;
+}
+
+.desc2-card1 {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    padding: 3rem;
+    margin-left: 8rem;
+}
+
+.desc2-card1 p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: #333333;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+}
+
+.desc2-card1 h2 {
+    font-size: 2rem;
+    font-weight: unset;
+
+}
+
+.desc2-card2 {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    margin-right: 5rem;
+}
+
+.desc2-card2 p {
+    font-size: 1.5rem;
+    color: #858585;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+
+
+}
+
+.desc2-card2 h2 {
+    line-height: 1.5;
+    color: #333333;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+}
+
+.desc2-card2 span {
+    font-size: 1rem;
+    color: #666666;
+}
+
+.buttons {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+@media only screen and (max-width: 430px) {
+    .desc-container {
+        flex-direction: column;
+        padding: 1rem 2rem;
+    }
+
+    .desc-card2 {
+        align-items: baseline;
+        padding-left: 0;
+    }
+
+    .desc-card1 {
+        margin: 2rem 0;
+    }
+
+    .desc2-card1 {
+        margin-left: 0rem;
+    }
+}
+
+
+@media only screen and (max-width: 530px) {
+    .desc2-container {
+        flex-direction: column;
+        align-items: baseline;
+        gap: 0rem;
+    }
+
+    .desc2-card2 {
+        padding: 0rem 3rem;
+    }
+
+    .desc2-card1 {
+        margin-left: 0rem;
+    }
+}

@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #F5F5F5;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem;
+    background-color: #fff;
+}
+
+.logo img {
+    max-width: 80%;
+    height: auto;
+    margin-left: 10rem;
+}
+
+@media (max-width: 500px) {
+    .logo img {
+        margin-left: 0rem;
+    }
+}

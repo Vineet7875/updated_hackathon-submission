@@ -1,0 +1,88 @@
+.home-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  box-sizing: border-box;
+  background-color: #003145;
+  color: white;
+}
+
+.left-container {
+  flex: 1;
+}
+
+.right-container {
+  flex: 1;
+  text-align: center;
+}
+
+.left-container h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.left-container p {
+  font-size: 1.8rem;
+
+}
+
+.left-container .submit-button {
+  background-color: #2c3e50;
+  color: #fff;
+  border: none;
+  font-size: 1.6rem;
+  padding: 1.2rem 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  /* background-color: green; */
+  background-color: #44924C;
+}
+
+.left-container .submit-button:hover {
+  background-color: #34495e;
+}
+
+.right-container #bulb {
+  width: 15rem;
+}
+
+/* .waves {
+  position: absolute;
+  width: 122rem;
+  height: 30rem;
+  left: calc(41% - 144rem/2);
+  top: 11rem;
+  background-image: url('C:\Users\HP\Desktop\reactapp\public\waves.png');
+  background-repeat: no-repeat;
+  opacity: 0.75;
+} */
+
+/* For mobile devices */
+@media (max-width: 500px) {
+  .home-container {
+    flex-direction: column;
+    padding: 30px;
+    text-align: center;
+  }
+
+  .left-container h1 {
+    font-size: 2.5rem;
+  }
+
+  .left-container p {
+    font-size: 1.8rem;
+  }
+
+  .left-container .submit-button {
+    font-size: 1.5rem;
+    padding: 1rem 1rem;
+  }
+
+  .right-container #bulb {
+    width: 10rem;
+    margin-top: 2rem
+  }
+}
